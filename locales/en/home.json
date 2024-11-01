@@ -1,0 +1,63 @@
+{
+  "page2": "About",
+  "header": {
+    "home": "Home",
+    "customize": "Plans",
+    "contact": "Downloads",
+    "freeWash": "Free Wash",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "hero": {
+    "heroTitle": "ELEVATE YOUR CAR EXPERIENCE",
+    "heroSubtitle": "Miami, FL - Luxury Car Services",
+    "heroExploreButton": "Explore"
+  },
+  "descriptionTitle": "Uplift is a subscription-based car service",
+  "descriptionText1": "that brings professional car cleaning directly to your home or workplace.",
+  "descriptionText2": "Our goal is to save you time and make car care effortless, allowing you to focus on what matters most. With Uplift, you enjoy the convenience of a freshly cleaned car without disrupting your day.",
+  "promo": {
+    "freeTrialTitle": "Get a 15 days Free Trial!",
+    "freeTrialSubtitle": "Download the App and Create your Account"
+  },
+  "upLift": "UpLift",
+  "luxuryService": "Luxury Service",
+  "interiorDetailing": "Interior Detailing",
+  "exteriorDetailing": "Exterior Detailing",
+  "vacuuming": "Vacuuming",
+  "seatCleaning": "Seat Cleaning",
+  "carpetCleaning": "Carpet Cleaning",
+  "tireCleaning": "Tire Cleaning",
+  "engineCleaning": "Engine Cleaning",
+  "airFreshener": "Air Freshener",
+  "leatherConditioning": "Leather Conditioning",
+  "ceramicCoating": "Ceramic Coating",
+  "paintProtection": "Paint Protection",
+  "ctaTitle": "Keep your Car always Clean",
+  "ctaSubtitle": "with just one subscription.",
+  "description": "Improving your car experience",
+  "home": {
+    "dontLetBags": "Upgrade your Car Experiencie",
+    "elevateExperience": "Elevate your car experience with our services",
+    "features": {
+      "Regular_Vacuum": "Regular Vacuum",
+      "Keeps_your_car_fresh_and_clean.": "Keeps your car fresh and clean.",
+      "Interior_Clean": "Interior Clean",
+      "Dusting_and_surface_cleaning_for_a_tidy_interior.": "Dusting and surface cleaning for a tidy interior.",
+      "Air_Freshener": "Air Freshener",
+      "Aromatizes_your_car_with_a_pleasant_scent.": "Aromatizes your car with a pleasant scent.",
+      "Towel_Dry": "Towel Dry",
+      "Leaves_a_spotless_professional_finish.": "Leaves a spotless professional finish.",
+      "Surface_Protect": "Surface Protect",
+      "Shields_surfaces_from_dirt_and_grime.": "Shields surfaces from dirt and grime.",
+      "Hand_Wax": "Hand Wax",
+      "Provides_a_glossy_shine_and_protection_for_your_paint.": "Provides a glossy shine and protection for your paint.",
+      "Bug_&_Tar": "Bug & Tar",
+      "Eliminates_stubborn_bugs_and_tar.": "Eliminates stubborn bugs and tar.",
+      "Wheel_Clean": "Wheel Clean",
+      "Keeps_wheels_and_tires_looking_their_best.": "Keeps wheels and tires looking their best.",
+      "Luxury_Detail": "Luxury Detail",
+      "Includes_premium_cleaning_and_detailing_services.": "Includes premium cleaning and detailing services."
+    }
+  }
+}

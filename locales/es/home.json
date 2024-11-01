@@ -1,0 +1,64 @@
+{
+  "page2": "Acerca de",
+  "header": {
+    "home": "Inicio",
+    "customize": "Planes",
+    "contact": "Descargas",
+    "freeWash": "Lavado Gratis",
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "hero": {
+    "heroTitle": "ELEVA TU EXPERIENCIA CON EL AUTOMÓVIL",
+    "heroSubtitle": "Miami, FL - Servicios de Automóviles de Lujo",
+    "heroExploreButton": "Explorar"
+  },
+  "descriptionTitle": "Uplift es un servicio de automóvil basado en suscripción",
+  "descriptionText1": "que lleva la limpieza profesional de automóviles directamente a tu hogar o lugar de trabajo.",
+  "descriptionText2": "Nuestro objetivo es ahorrarte tiempo y hacer que el cuidado del automóvil sea sencillo, permitiéndote concentrarte en lo que más importa. Con Uplift, disfrutas de la comodidad de un automóvil recién limpiado sin interrumpir tu día.",
+  "promo": {
+    "freeTrialTitle": "Obtén 15 días de prueba gratis!",
+    "freeTrialSubtitle": "Descarga la aplicación y crea tu cuenta"
+  },
+  "upLift": "UpLift",
+  "luxuryService": "Servicio de Lujo",
+  "interiorDetailing": "Detallado Interior",
+  "exteriorDetailing": "Detallado Exterior",
+  "vacuuming": "Aspirado",
+  "seatCleaning": "Limpieza de Asientos",
+  "carpetCleaning": "Limpieza de Alfombras",
+  "tireCleaning": "Limpieza de Neumáticos",
+  "engineCleaning": "Limpieza de Motor",
+  "airFreshener": "Ambientador",
+  "leatherConditioning": "Acondicionamiento de Cuero",
+  "ceramicCoating": "Recubrimiento Cerámico",
+  "paintProtection": "Protección de Pintura",
+
+       "ctaTitle": "Mantén tu carro limpio",
+      "ctaSubtitle": "Con solo una suscripcion.",
+      "description": "Mejorando tu experiencia al volante",
+  "home": {
+    "dontLetBags": "Mejora tu experiencia al volante",
+    "elevateExperience": "Eleva la experiencia de tu auto con nuestros servicios",
+    "features": {
+      "Regular_Vacuum": "Aspirado regular",
+      "Keeps_your_car_fresh_and_clean.": "Mantiene tu auto fresco y limpio.",
+      "Interior_Clean": "Limpieza interior",
+      "Dusting_and_surface_cleaning_for_a_tidy_interior.": "Limpieza de polvo y superficies para un interior ordenado.",
+      "Air_Freshener": "Ambientador",
+      "Aromatizes_your_car_with_a_pleasant_scent.": "Aromatiza tu auto con un aroma agradable.",
+      "Towel_Dry": "Secado con toalla",
+      "Leaves_a_spotless_professional_finish.": "Deja un acabado impecable y profesional.",
+      "Surface_Protect": "Protección de superficie",
+      "Shields_surfaces_from_dirt_and_grime.": "Protege las superficies de la suciedad y la mugre.",
+      "Hand_Wax": "Encerado a mano",
+      "Provides_a_glossy_shine_and_protection_for_your_paint.": "Proporciona un brillo reluciente y protección para tu pintura.",
+      "Bug_&_Tar": "Insectos y alquitrán",
+      "Eliminates_stubborn_bugs_and_tar.": "Elimina los insectos y el alquitrán difíciles.",
+      "Wheel_Clean": "Limpieza de llantas",
+      "Keeps_wheels_and_tires_looking_their_best.": "Mantiene las llantas y los neumáticos con su mejor aspecto.",
+      "Luxury_Detail": "Detalle de lujo",
+      "Includes_premium_cleaning_and_detailing_services.": "Incluye servicios premium de limpieza y detallado."
+    }
+  }
+}

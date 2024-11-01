@@ -1,0 +1,47 @@
+[
+    {
+      "image": "/Features/1.svg", 
+      "title": "Regular Vacuum",
+      "subtitle": "Keeps your car fresh and clean."
+    },
+    {
+      "image": "/Features/2.svg",
+      "title": "Interior Clean",
+      "subtitle": "Dusting and surface cleaning for a tidy interior."
+    },
+    {
+      "image":"/Features/3.svg",
+      "title": "Air Freshener",
+      "subtitle": "Aromatizes your car with a pleasant scent."
+    },
+    {
+      "image": "/Features/4.svg",
+      "title": "Towel Dry",
+      "subtitle": "Leaves a spotless professional finish."
+    },
+    {
+      "image": "/Features/5.svg",
+      "title": "Surface Protect",
+      "subtitle": "Shields surfaces from dirt and grime."
+    },
+    {
+      "image": "/Features/6.svg",
+      "title": "Hand Wax",
+      "subtitle": "Provides a glossy shine and protection for your paint."
+    },
+    {
+      "image": "/Features/7.svg",
+      "title": "Bug & Tar",
+      "subtitle": "Eliminates stubborn bugs and tar."
+    },
+    {
+      "image": "/Features/8.svg",
+      "title": "Wheel Clean",
+      "subtitle": "Keeps wheels and tires looking their best."
+    },
+    {
+      "image": "/Features/9.svg", 
+      "title": "Luxury Detail",
+      "subtitle": "Includes premium cleaning and detailing services."
+    }
+  ]
