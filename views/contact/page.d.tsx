@@ -1,10 +1,10 @@
 import React from 'react';
+import Downloads from '../downloads';
 
 const Contact: React.FC = () => {
   return (
     <div>
-      <h1>Contact Page</h1>
-      {/* ... tu contenido ... */}
+   <Downloads />
     </div>
   );
 };

@@ -14,7 +14,22 @@ const Plans: Plan[] = [
       {
         featureid:1, 
         icon: '/Features/1.svg',
-        title: 'Basic Vacunning'
+        title: 'Vacuuming'
+      },
+      {
+        featureid:2, 
+        icon: '/Features/5.svg',
+        title: 'Surface Cleaning'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/3.svg',
+        title: 'Air freshener'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/4.svg',
+        title: 'Towel Dry Finish'
       }
     ]
   },
@@ -23,13 +38,28 @@ const Plans: Plan[] = [
     name: 'Plus',
     basePrice: 149,
     frecuency: '2 times at month',
-    description: 'Basic Clean every 15 days',
+    description: 'Basic Three times at Month',
     image:  '/plans/Plusx.png', 
     features : [ 
       {
-        featureid:2, 
+        featureid:1, 
         icon: '/Features/1.svg',
-        title: 'Basic Vacunning'
+        title: 'Vacuuming'
+      },
+      {
+        featureid:2, 
+        icon: '/Features/5.svg',
+        title: 'Surface Cleaning'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/3.svg',
+        title: 'Air freshener'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/4.svg',
+        title: 'Towel Dry Finish'
       }
     ]
   },
@@ -38,13 +68,28 @@ const Plans: Plan[] = [
     name: 'Ultra',
     basePrice: 199,
     frecuency: '2 times at month',
-    description: 'Basic Clean every 15 days',
+    description: 'Basic Clean every Week',
     image: '/plans/Premium.png', 
     features : [ 
       {
-        featureid:3, 
+        featureid:1, 
         icon: '/Features/1.svg',
-        title: 'Basic Vacunning'
+        title: 'Vacuuming'
+      },
+      {
+        featureid:2, 
+        icon: '/Features/5.svg',
+        title: 'Surface Cleaning'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/3.svg',
+        title: 'Air freshener'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/4.svg',
+        title: 'Towel Dry Finish'
       }
     ]
   },

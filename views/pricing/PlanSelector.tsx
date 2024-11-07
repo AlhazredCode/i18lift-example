@@ -2,6 +2,7 @@
 'use client';
 import React, { useState, useContext } from 'react';
 import { Grid, Box, Typography, Stack, Container, useMediaQuery, useTheme, Button, Modal } from '@mui/material';
+
 import Image from 'next/image';
 import Plans from '@/api/plans';
 import { VehicleContext } from '@/components/customize';

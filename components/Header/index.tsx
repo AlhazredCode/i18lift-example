@@ -2,18 +2,20 @@
 
 
 'use client'
-import React from 'react';
+import React, {useState} from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
 import Link from 'next/link';
+import Modal from '@mui/material/Modal';
 import Container from '@mui/material/Container';
 import { makeStyles } from 'tss-react/mui';
 import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material';
 import { useRouter } from 'next/navigation';
+import FreeWashModal from './FreeWashModal';
 
 
 const useStyles = makeStyles()((theme) => ({
@@ -65,6 +67,7 @@ const Header: React.FC<HeaderProps> = ({ type, activeView, onSelectView }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const router = useRouter();
+  const [openModal, setOpenModal] = useState(false);
 
 
   const changeLanguage = () => {
@@ -79,8 +82,18 @@ const Header: React.FC<HeaderProps> = ({ type, activeView, onSelectView }) => {
     }
   };
 
+  const handleOpenModal = () => {
+    setOpenModal(true);
+};
+
+const handleCloseModal = () => {
+    setOpenModal(false);
+};
+
+
 
   return (
+    <>
     <Box className={classes.container}>
       <Container maxWidth="lg" sx={{ py: 1, display: 'flex', justifyContent: 'center' }}>
         <Grid container px={1}>
@@ -128,11 +141,9 @@ const Header: React.FC<HeaderProps> = ({ type, activeView, onSelectView }) => {
 
           <Grid item xs={12} sm={4} container justifyContent={isMobile ? 'center' : 'flex-end'} spacing={2}>
             <Grid item>
-              <Link href={ type==="primary" ? './subscription' : './' } passHref>
-                <Button className={classes.neonButton}>
+                <Button className={classes.neonButton} onClick={handleOpenModal}>
                   {t('header.freeWash')}
                 </Button>
-              </Link>
             </Grid>
             <Grid item>
               <Button className={classes.outlineButton} onClick={changeLanguage}>
@@ -144,6 +155,33 @@ const Header: React.FC<HeaderProps> = ({ type, activeView, onSelectView }) => {
         </Grid>
       </Container>
     </Box>
+
+   <Modal
+                open={openModal}
+                onClose={handleCloseModal}
+                aria-labelledby="buy-modal-title"
+                aria-describedby="buy-modal-description"
+            >
+  <Box sx={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        height: '80vh',
+        minWidth: isMobile ? '90vw' : '60vw',
+        bgcolor: 'rgba(26, 26, 26, 0.85)',
+        backdropFilter: 'blur(10px)',
+        boxShadow: 24,
+        borderRadius: 4,
+        p: 4
+    }}>
+            <FreeWashModal/>
+            </Box>
+            </Modal>
+
+
+
+    </>
   );
 };
 
