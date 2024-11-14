@@ -3,8 +3,8 @@
 import styles from './page.module.css';
 import LandingPage from '../../views/home/page';
 import Customize from '@/components/customize';
-import Pricing from '../../views/pricing/page.d';
-import Contact from '../../views/contact/page.d';
+import Pricing from '../../views/planSelector/page.d';
+import Downloads from '@/views/downloads';
 import Header from '@/components/Header';
 import Footer from '@/components/footer/footer';
 import { useTheme } from '@mui/material/styles';
@@ -55,7 +55,7 @@ const Home: React.FC<{ params: { locale: string } }> = ({ params: { locale } }) 
             {activeView === 'landing' && <LandingPage />}
            
             {activeView === 'customize' && <Customize />}
-            {activeView === 'contact' && <Contact />}
+            {activeView === 'download' && <Downloads />}
           </Box>
           <Footer />
         </TranslationsProvider>

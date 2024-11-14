@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 import Grid from '@mui/material/Grid';
-import VehicleSelector from '@/views/pricing/VehicleSelector';
-import PlanSelector from '@/views/pricing/PlanSelector';
+import VehicleSelector from '@/views/planSelector/VehicleSelector';
+import PlanSelector from '@/views/planSelector/PlanSelector';
 import { Vehicle } from '@/types/vehicle';
 import Vehicles from '@/api/vehicles';
 

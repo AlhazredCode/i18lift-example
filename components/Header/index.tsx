@@ -129,10 +129,10 @@ const handleCloseModal = () => {
                 <Button
                   variant="text"
                   color="secondary"
-                  onClick={() => handleNavigation('contact')} // Usa handleNavigation
-                  style={{ fontWeight: activeView === 'contact' ? 'bold' : 'normal' }}
+                  onClick={() => handleNavigation('download')} // Usa handleNavigation
+                  style={{ fontWeight: activeView === 'download' ? 'bold' : 'normal' }}
                 >
-                  {t('header.contact')}
+                  {t('header.download')}
                 </Button>
               </Grid>
             </Grid>

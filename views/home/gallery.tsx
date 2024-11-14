@@ -26,6 +26,8 @@ export default function ImageCarousel() {
           {images.map((image, index) => (
             <Box key={index} sx={{ display: 'inline-block', mx: 2 }}> {/* Add margin between images */}
               <Image
+              layout="intrinsic"
+              objectFit= "cover"
                 src={image.src}
                 alt={image.alt}
                 width={imageWidth}
