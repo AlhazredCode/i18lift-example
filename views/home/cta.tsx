@@ -18,7 +18,7 @@ const Cta = () => {
       sx={{
         bgcolor: 'gray',
         py: { xs: 6, md: 12 },
-        backgroundImage: 'url(/cta.jpg)',
+        backgroundImage: 'url(/cta.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'bottom',
         display: 'flex',

@@ -4,15 +4,68 @@
     "home": "Home",
     "customize": "Plans",
     "download": "Downloads",
-    "freeWash": "Free Wash",
+    "freeWash": "Your first wash just for $5",
     "english": "English",
     "spanish": "Spanish"
   },
   "hero": {
-    "heroTitle": "ELEVATE YOUR CAR EXPERIENCE",
-    "heroSubtitle": "Miami, FL - Luxury Car Services",
+    "heroTitle": "Wash Your Car Without Water: Subscribe!",
+    "heroSubtitle": " Save water, time and money. Spotless shine without using a drop of water!",
     "heroExploreButton": "Explore"
   },
+
+ "plans": {
+  "Buttom": "Suscribe",
+    "Title": "Select your plan",
+    "SelectYourModel": "Choose from our models",
+    "VehicleType": "Select your vehicle type",
+    "Basic": {
+        "description": "Clean every 15 days",
+        "features": {
+            "Vacuuming": "Complete interior vacuuming",
+            "Surface_Cleaning": "Cleaning of all surfaces",
+            "Air_freshener": "Application of air freshener",
+            "Towel_Dry_Finish": "Drying with microfiber towels"
+        }
+    },
+    "Deluxe": {
+        "description": "Clean three times a month",
+        "features": {
+            "Vacuuming": "Complete interior vacuuming",
+            "Surface_Cleaning": "Cleaning of all surfaces",
+            "Air_freshener": "Application of air freshener",
+            "Towel_Dry_Finish": "Drying with microfiber towels"
+        }
+    },
+    "Premium": {
+        "description": "Clean every week",
+        "features": {
+            "Vacuuming": "Complete interior vacuuming",
+            "Surface_Cleaning": "Cleaning of all surfaces",
+            "Air_freshener": "Application of air freshener",
+            "Towel_Dry_Finish": "Drying with microfiber towels"
+        }
+    },
+    "Elite": {
+        "description": "Clean every week",
+        "features": {
+            "Vacuuming": "Complete interior vacuuming",
+            "Surface_Cleaning": "Cleaning of all surfaces",
+            "Air_freshener": "Application of air freshener",
+            "Towel_Dry_Finish": "Drying with microfiber towels" 
+        }
+    }
+},
+
+
+  "download": {
+    "button": "Download",
+    "appleTitle": "Download for Apple",
+    "androidTitle": "Download for Android",
+    "appleDescription": "Get it on the AppStore",
+    "androidDescription": "Get it on the the Google Play"
+  },
+
   "descriptionTitle": "Uplift is a subscription-based car service",
   "descriptionText1": "that brings professional car cleaning directly to your home or workplace.",
   "descriptionText2": "Our goal is to save you time and make car care effortless, allowing you to focus on what matters most. With Uplift, you enjoy the convenience of a freshly cleaned car without disrupting your day.",
@@ -35,7 +88,7 @@
   "paintProtection": "Paint Protection",
   "ctaTitle": "Keep your Car always Clean",
   "ctaSubtitle": "with just one subscription.",
-  "description": "Improving your car experience",
+  "description": "🚗✨ UPLIFT MOBILE WASH APP",
   "home": {
     "dontLetBags": "Upgrade your Car Experiencie",
     "elevateExperience": "Elevate your car experience with our services",

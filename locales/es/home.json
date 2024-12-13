@@ -4,15 +4,67 @@
     "home": "Inicio",
     "customize": "Planes",
     "download": "Descargas",
-    "freeWash": "Lavado Gratis",
+    "freeWash": "Tu primer lavado solo por $5",
     "english": "Inglés",
     "spanish": "Español"
   },
   "hero": {
-    "heroTitle": "ELEVA TU EXPERIENCIA CON EL AUTOMÓVIL",
-    "heroSubtitle": "Miami, FL - Servicios de Automóviles de Lujo",
+    "heroTitle": "Lava tu auto sin agua: ¡Suscríbete! ",
+    "heroSubtitle": "Ahorra agua, tiempo y dinero. ¡Brillo impecable sin una gota de agua!",
     "heroExploreButton": "Explorar"
   },
+
+"plans": {
+    "Buttom": "Suscribete",
+    "Title": "Selecciona tu plan",
+    "SelectYourModel": "Elige entre nuestros modelos",
+    "VehicleType": "Selecciona tu tipo de vehículo",
+    "Basic": {
+        "description": "Limpieza cada 15 días",
+        "features": {
+            "Vacuuming": "Aspirado interior completo",
+            "Surface_Cleaning": "Limpieza de todas las superficies",
+            "Air_freshener": "Aplicación de ambientador",
+            "Towel_Dry_Finish": "Secado con toallas de microfibra"
+        }
+    },
+    "Deluxe": {
+        "description": "Limpieza tres veces al mes",
+        "features": {
+            "Vacuuming": "Aspirado interior completo",
+            "Surface_Cleaning": "Limpieza de todas las superficies",
+            "Air_freshener": "Aplicación de ambientador",
+            "Towel_Dry_Finish": "Secado con toallas de microfibra"
+        }
+    },
+    "Premium": {
+        "description": "Limpieza cada semana",
+        "features": {
+            "Vacuuming": "Aspirado interior completo",
+            "Surface_Cleaning": "Limpieza de todas las superficies",
+            "Air_freshener": "Aplicación de ambientador",
+            "Towel_Dry_Finish": "Secado con toallas de microfibra"
+        }
+    },
+    "Elite": {
+        "description": "Limpieza cada semana",
+        "features": {
+            "Vacuuming": "Aspirado interior completo",
+            "Surface_Cleaning": "Limpieza de todas las superficies",
+            "Air_freshener": "Aplicación de ambientador",
+            "Towel_Dry_Finish": "Secado con toallas de microfibra"
+        }
+    }
+},
+
+"download": {
+    "button": "Descargar",
+    "appleTitle": "Descargar para Apple",
+    "androidTitle": "Descargar para Android",
+    "appleDescription": "Consíguelo en la App Store",
+    "androidDescription": "Consíguelo en Google Play"
+},
+
   "descriptionTitle": "Uplift es un servicio de automóvil basado en suscripción",
   "descriptionText1": "que lleva la limpieza profesional de automóviles directamente a tu hogar o lugar de trabajo.",
   "descriptionText2": "Nuestro objetivo es ahorrarte tiempo y hacer que el cuidado del automóvil sea sencillo, permitiéndote concentrarte en lo que más importa. Con Uplift, disfrutas de la comodidad de un automóvil recién limpiado sin interrumpir tu día.",
@@ -36,7 +88,7 @@
 
        "ctaTitle": "Mantén tu carro limpio",
       "ctaSubtitle": "Con solo una suscripcion.",
-      "description": "Mejorando tu experiencia al volante",
+      "description": "🚗✨ UPLIFT TU APP DE AUTOLAVADO",
   "home": {
     "dontLetBags": "Mejora tu experiencia al volante",
     "elevateExperience": "Eleva la experiencia de tu auto con nuestros servicios",

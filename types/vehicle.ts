@@ -2,9 +2,11 @@ interface Vehicle {
   id: number;
   name: string;
   description: string;
-  priceFactor: number;
-  Image: string;
- 
+  Basic?: number; 
+  Deluxe?: number;
+  Premium?: number;
+  Elite?: number;
+  Image: string; 
 }
 
 export type { Vehicle }; 

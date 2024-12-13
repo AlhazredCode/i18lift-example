@@ -5,14 +5,15 @@ import { Grid, Box, Typography, Stack, Container, useMediaQuery, useTheme } from
 import Image from 'next/image';
 import { Vehicle } from '@/types/vehicle';
 import { VehicleContext } from '@/components/customize';
-
+import { useTranslation } from 'react-i18next';
 
 function VehicleSelector() {
   const { setSelectedVehicle } = useContext(VehicleContext);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [selectedVehicleLocal, setSelectedVehicleLocal] = useState(Vehicles[0]); // Estado local para el estilo
-
+  const { t } = useTranslation();
+  
   const handleVehicleSelect = (vehicle: Vehicle) => {
     setSelectedVehicle(vehicle); // Actualiza el contexto
     setSelectedVehicleLocal(vehicle); // Actualiza el estado local
@@ -27,10 +28,10 @@ function VehicleSelector() {
           <Grid item xs={12} sx={{ bgcolor: 'rgba(255, 255, 255, 0.05)', px: 2, py: 2, borderRadius: 2 }}>
             <Grid item sx={{ mb: 2 }}>
               <Typography variant="h5" align="center" sx={{ fontWeight: 'bold' }}>
-                Select Your Vehicle Type
+              {t('plans.VehicleType')}
               </Typography>
               <Typography variant="subtitle1" align="center" color="textSecondary">
-                Choose from our models
+              {t('plans.SelectYourModel')}
               </Typography>
             </Grid>
 

@@ -16,25 +16,25 @@ export default function ImageCarousel() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const imageWidth = isMobile ? 300 : 400; // Adjust sizes as needed
+  const imageWidth = isMobile ? 300 : 400;
   const imageHeight = isMobile ? 300 : 400;
 
   return (
     <Container maxWidth="lg" sx={{ mt: 5, mb: 5 }}>
-      <Box sx={{ overflowX: 'hidden', width: '100%' }}> {/* Hide overflowing content */}
-        <Marquee gradient={false} speed={40}> {/* Adjust speed as needed */}
+      <Box sx={{ overflowX: 'hidden', width: '100%' }}>
+        <Marquee gradient={false} speed={40}> 
           {images.map((image, index) => (
-            <Box key={index} sx={{ display: 'inline-block', mx: 2 }}> {/* Add margin between images */}
+            <Box key={index} sx={{ display: 'inline-block', mx: 2 }}>
               <Image
-              layout="intrinsic"
-              objectFit= "cover"
+                layout="intrinsic"
+                objectFit="cover"
                 src={image.src}
                 alt={image.alt}
                 width={imageWidth}
                 height={imageHeight}
                 style={{
-                  display: 'block', // Prevent extra space below image
-                  borderRadius: 2,   // Rounded corners
+                  display: 'block',
+                  borderRadius: 2,
                 }}
               />
             </Box>

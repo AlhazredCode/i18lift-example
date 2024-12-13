@@ -5,6 +5,8 @@ import { Typography, Box } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { useMediaQuery } from '@mui/material';
+import { useTheme } from '@mui/material';
 
 const useStyles = makeStyles()((theme) => ({
   root: {
@@ -41,6 +43,9 @@ const useStyles = makeStyles()((theme) => ({
 const Description: React.FC = () => {
   const { classes } = useStyles();
   const { t } = useTranslation('home');
+  const theme = useTheme();
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -62,6 +67,10 @@ const Description: React.FC = () => {
   return (
     <Box className={classes.root}>
       <motion.div variants={containerVariants} initial="hidden" animate="visible">
+      <motion.div variants={itemVariants} className={classes.logo}>
+          <Image src="/CarWashVan.webp" alt="Logo" width={isMobile ? 300 : 500} height={isMobile ? 300 : 500} layout='intrinsic' objectFit='cover' />
+        </motion.div>
+
         <motion.div variants={itemVariants} className={classes.logo}>
           <Image src="/icons/Logo.svg" alt="Logo" width={150} height={75} />
         </motion.div>
@@ -70,14 +79,20 @@ const Description: React.FC = () => {
             {t('descriptionTitle')}
           </Typography>
         </motion.div>
-        <motion.div variants={itemVariants}>
-          <Typography variant="body1" className={classes.description}>
-            {t('descriptionText1')}
-            <br />
-            <br />
-            {t('descriptionText2')}
-          </Typography>
-        </motion.div>
+     
+          <motion.div variants={itemVariants}>
+            <Typography variant="body1" className={classes.description}>
+              {t('descriptionText1')}
+              </Typography>
+              <br />
+              <br />
+              <Box sx={{ maxWidth: '800px', justifySelf: 'center'}}>
+              <Typography variant="body1" className={classes.description}>
+              {t('descriptionText2')}
+            </Typography>
+            </Box>
+          </motion.div>
+     
       </motion.div>
     </Box>
   );

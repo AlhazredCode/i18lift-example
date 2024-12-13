@@ -42,7 +42,7 @@ const useStyles = makeStyles()((theme) => ({
     },
   },
   outlineButton: {
-    color: '#E20000',
+    color: '#F2F2F2',
     borderColor: '#E20000',
     padding: '8px 20px',
     borderRadius: '8px',
@@ -103,7 +103,7 @@ const handleCloseModal = () => {
             </Box>
           </Grid>
 
-            <Grid item xs={12} sm={4} container justifyContent="center">
+            <Grid item xs={12} sm={4} container justifyContent="center" alignItems="center">
               <Grid item>
                 <Button
                   variant="text"
@@ -139,7 +139,7 @@ const handleCloseModal = () => {
          
 
 
-          <Grid item xs={12} sm={4} container justifyContent={isMobile ? 'center' : 'flex-end'} spacing={2}>
+          <Grid item xs={12} sm={4} container justifyContent={isMobile ? 'center' : 'flex-end'}  alignItems="center" spacing={2}>
             <Grid item>
                 <Button className={classes.neonButton} onClick={handleOpenModal}>
                   {t('header.freeWash')}

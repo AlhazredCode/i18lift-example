@@ -6,10 +6,10 @@ const Plans: Plan[] = [
   {
     id : 1,
     name: 'Basic',
-    basePrice: 75,
+    basePrice: 40,
     frecuency: '2 times at month',
     description: 'Basic Clean every 15 days',
-    image: '/plans/Basic.png', 
+    image: '/plans/Mini.webp',
     features : [ 
       {
         featureid:1, 
@@ -35,11 +35,11 @@ const Plans: Plan[] = [
   },
   {
     id : 2,
-    name: 'Plus',
-    basePrice: 149,
+    name: 'Deluxe',
+    basePrice: 60,
     frecuency: '2 times at month',
     description: 'Basic Three times at Month',
-    image:  '/plans/Plusx.png', 
+    image: '/plans/Basic.webp',
     features : [ 
       {
         featureid:1, 
@@ -65,11 +65,11 @@ const Plans: Plan[] = [
   },
   {
     id : 3,
-    name: 'Ultra',
+    name: 'Premium',
     basePrice: 199,
     frecuency: '2 times at month',
     description: 'Basic Clean every Week',
-    image: '/plans/Premium.png', 
+    image: '/plans/Plusx.webp',
     features : [ 
       {
         featureid:1, 
@@ -93,6 +93,36 @@ const Plans: Plan[] = [
       }
     ]
   },
+  {
+    id : 4,
+    name: 'Elite',
+    basePrice: 199,
+    frecuency: '2 times at month',
+    description: 'Basic Clean every Week',
+    image: '/plans/Premium.webp',
+    features : [ 
+      {
+        featureid:1, 
+        icon: '/Features/1.svg',
+        title: 'Vacuuming'
+      },
+      {
+        featureid:2, 
+        icon: '/Features/5.svg',
+        title: 'Surface Cleaning'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/3.svg',
+        title: 'Air freshener'
+      },
+      {
+        featureid:3, 
+        icon: '/Features/4.svg',
+        title: 'Towel Dry Finish'
+      }
+    ]
+  }
  
 ];
 
