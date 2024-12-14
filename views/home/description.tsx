@@ -11,7 +11,7 @@ import { useTheme } from '@mui/material';
 const useStyles = makeStyles()((theme) => ({
   root: {
     textAlign: 'center',
-    padding: theme.spacing(4),
+    padding: theme.spacing(2),
     marginBottom: theme.spacing(8),
   },
   logo: {

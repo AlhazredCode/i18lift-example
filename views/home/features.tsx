@@ -4,12 +4,26 @@ import { Typography, Box, Container, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import featuresData from '@/api/features.json';
 import { useTranslation } from 'react-i18next';
+import {useMediaQuery} from '@mui/material';
+import { useTheme } from '@mui/material';
+
 
 export default function Features() {
   const { t } = useTranslation('home');
+  const theme = useTheme();
 
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
-    <Container sx={{ mt: { md: 15, xs: 10 } }}>
+    <Container sx={{ mt: { md: 10, xs: 5 } }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <motion.div 
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           transition={{ duration: 0.8, ease: 'easeInOut' }}
+            >
+            <Image src="/Clean.webp" alt="Logo" width={isMobile ? 200 : 300} height={isMobile ? 200 : 300} layout='intrinsic' objectFit='cover' />
+          </motion.div>
+        </Box>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

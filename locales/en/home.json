@@ -8,10 +8,27 @@
     "english": "English",
     "spanish": "Spanish"
   },
+
+  "Video": {
+    "Title": "See What's Happening",
+    "Description": "@UpliftWashApp"
+  },
+
   "hero": {
     "heroTitle": "Wash Your Car Without Water: Subscribe!",
     "heroSubtitle": " Save water, time and money. Spotless shine without using a drop of water!",
     "heroExploreButton": "Explore"
+  },
+
+  "Modal": {
+    "Title": "✨ First Month Only $5! ✨",
+    "Button": "Claim your Wash!",
+    "Description": "Get ready to experience the future of car washing. Sign up today and get your first month for just $5, including your first eco-friendly, waterless wash."
+  },
+
+  "EcoFriendly": {
+    "Title": "Eco-friendly Cleaning",
+    "Description": "Our waterless car wash system uses innovative sprays and techniques to clean your vehicle without wasting a drop of water. This eco-friendly approach not only saves precious resources but also delivers a spotless shine. Our specialized cleaning solutions lift away dirt and grime, leaving your car looking its best while minimizing environmental impact."
   },
 
  "plans": {

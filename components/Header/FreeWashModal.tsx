@@ -1,68 +1,67 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { Box, TextField, Grid, Step, Stepper, StepLabel, Typography, Button } from '@mui/material'
-import One from './Steps/One'
-import Two from './Steps/Two'
-import Three from './Steps/Three'
-
+import { Box, TextField, Grid, Step, Stepper, StepLabel, Typography, Button , Container} from '@mui/material'
+import { motion } from 'framer-motion'
+import { useTheme } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+import { useMediaQuery } from '@mui/material';
 function FreeWashModal() {
-  const [stepIndex, setStepIndex] = useState(0);
-  const steps = [
-    'Availability',
-    'User Information',
-    'Checkout',
-  ];
 
-  const handleNext = () => {
-    setStepIndex((prevStep) => Math.min(prevStep + 1, steps.length - 1));
-  };
 
-  const handleBack = () => {
-    setStepIndex((prevStep) => Math.max(prevStep - 1, 0));
-  };
+  const { t } = useTranslation('home');
+  const theme = useTheme();
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <>
       <Box display="flex" justifyContent="center" height="90%">
-        <Box sx={{ width: '100%' }}>
-          <Stepper activeStep={stepIndex} alternativeLabel>
-            {steps.map((label) => (
-              <Step key={label}>
-                <StepLabel>{label}</StepLabel>
-              </Step>
-            ))}
-          </Stepper>
 
-          <Box sx={{ mt: 4, height: '80%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <Box sx={{ height: '80%' }}>
-              {stepIndex === 0 && (
-            <One/>
-              )}
+        <Grid container spacing={2}>
 
-              {stepIndex === 1 && (
-                <Two/>
-              )}
+          <Grid item xs={12} justifyContent="center" display="flex">
 
-              {stepIndex === 2 && (
-                 <Three/>
-              )}
-            </Box>
+            <motion.div 
+             initial={{ opacity: 0 }}
+             whileInView={{ opacity: 1 }}
+             transition={{ duration: 1.5, ease: 'easeInOut' }}
+            >
+              <Image src="/UpTicket.webp" alt="Logo" width={isMobile ? 300 : 500} height={isMobile ? 300 : 500} layout='intrinsic' objectFit='cover' />
+            </motion.div>
+          </Grid>
+          <Grid item xs={12} justifyContent="center" display="flex">
 
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
+            >
+              <Container maxWidth="md">
+              <Typography variant="h4" align="center" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
+                {t('Modal.Title')}
+              </Typography>
+              <Typography variant="h6" align="center" color="textSecondary" gutterBottom>
+                {t('Modal.Description')}
+              </Typography>
+              </Container>
+            </motion.div>
+            </Grid>
+            <Grid item xs={12} justifyContent="center" display="flex">
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8, ease: 'easeInOut' }}>
+
+                <Button variant="contained" color="primary" size='large' sx={{ mt: 2, mb: 2, backgroundColor : 'red' }} onClick={() => { }}>
+                  {t('Modal.Button')}
+                </Button>
+              </motion.div>
+            </Grid>
+            
           
-          </Box>
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', height: '10%', pt: 'auto' }}>
-              {stepIndex > 0 && (
-                <Button onClick={handleBack} sx={{ mx: 'auto' }}>
-                  Back
-                </Button>
-              )}
-              {stepIndex < steps.length - 1 && (
-                <Button variant="contained" onClick={handleNext} sx={{ mx: 'auto' }}>
-                  Next
-                </Button>
-              )}
-            </Box>
-        </Box>
+
+        </Grid>
       </Box>
     </>
   );

@@ -8,10 +8,25 @@
     "english": "Inglés",
     "spanish": "Español"
   },
+
+  "Video": {
+    "Title": "Mira lo que está pasando",
+    "Description": "@UpliftWashApp"
+  },
+
   "hero": {
     "heroTitle": "Lava tu auto sin agua: ¡Suscríbete! ",
     "heroSubtitle": "Ahorra agua, tiempo y dinero. ¡Brillo impecable sin una gota de agua!",
     "heroExploreButton": "Explorar"
+  },
+  "Modal": {
+    "Title": "✨ ¡Primer mes por solo $5! ✨",
+    "Button": "¡Obtén tu lavado!",
+    "Description": "Prepárate para experimentar el futuro del lavado de autos. Regístrate hoy y obtén tu primer mes por solo $5, incluyendo tu primer lavado ecológico sin agua."
+},
+  "EcoFriendly": {
+    "Title": "Eco-Limpieza",
+    "Description": "Nuestro sistema de lavado de autos sin agua utiliza aerosoles y técnicas innovadoras para limpiar tu vehículo sin desperdiciar una gota de agua. Este enfoque ecológico no solo ahorra recursos valiosos, sino que también ofrece un brillo impecable. Nuestras soluciones de limpieza especializadas eliminan la suciedad y la mugre, dejando tu auto con el mejor aspecto y minimizando el impacto ambiental."
   },
 
 "plans": {

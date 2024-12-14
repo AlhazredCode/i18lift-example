@@ -8,9 +8,9 @@ import Dimensions from './dimensions';
 import Cta from './cta';
 import SkillsSection from './skills';
 import Gallery from './gallery';
-
+import EcoFriendly from './EcoFriendly';
 import Promo from './promo';
-
+import VideoEmbed from './Video';
 function LandingPage() {
   return (
     <Box sx={{minHeight: '100%'}}>
@@ -20,7 +20,10 @@ function LandingPage() {
           <SkillsSection /> 
           <Description /> 
           <Promo /> 
+          
           <Features /> 
+          <EcoFriendly />
+          <VideoEmbed />
           <Cta /> 
           <Gallery /> 
         </Box>

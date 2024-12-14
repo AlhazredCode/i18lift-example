@@ -7,7 +7,7 @@ import Plans from '@/api/plans';
 import { VehicleContext } from '@/components/customize';
 import { Plan } from '@/types/plan';
 import { Vehicle } from '@/types/vehicle';
-import BuyModal from './BuyModal';
+
 import { useTranslation } from 'react-i18next';
 
 
@@ -21,14 +21,6 @@ function PlanSelector() {
 
     const handlePlanSelect = (plan: Plan) => {
         setSelectedPlan(plan);
-    };
-
-    const handleOpenModal = () => {
-        setOpenModal(true);
-    };
-
-    const handleCloseModal = () => {
-        setOpenModal(false);
     };
 
     const getPlanPrice = (plan: Plan, vehicle: Vehicle): number => {
@@ -94,11 +86,7 @@ function PlanSelector() {
                                                 </Stack>
                                             </Box>
                                         ))}
-                                        {/*  Si necesitas traducir el texto del botón, 
-                                             usa t('clave_de_traduccion')  */}
-                                        <Button variant="outlined" color="primary" onClick={handleOpenModal}>
-                                        {t('plans.Buttom')} 
-                                        </Button>
+                                     
                                     </Stack>
                                 ))}
                             </Box>
@@ -107,39 +95,7 @@ function PlanSelector() {
                 </Container>
             </Box>
 
-            <Modal open={openModal} onClose={handleCloseModal}>
-                <Box sx={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    height: '80vh',
-                    minWidth: isMobile ? '90vw' : '60vw',
-                    bgcolor: 'rgba(26, 26, 26, 0.85)',
-                    backdropFilter: 'blur(10px)',
-                    boxShadow: 24,
-                    borderRadius: 4,
-                    p: 4
-                }}>
-                    <BuyModal plan={selectedPlan} price={planPrice} /> 
-                    <Grid container spacing={2} sx={{ position: 'relative', top: '90%', height: '100%' }}>
-                        <Grid item xs={6}>
-                            {/*  Si necesitas traducir el texto del botón, 
-                                 usa t('clave_de_traduccion')  */}
-                            <Button variant="outlined" fullWidth onClick={handleCloseModal}>
-                                Cancel 
-                            </Button>
-                        </Grid>
-                        <Grid item xs={6}>
-                            {/*  Si necesitas traducir el texto del botón, 
-                                 usa t('clave_de_traduccion')  */}
-                            <Button variant="contained" fullWidth color="primary">
-                                Confirm 
-                            </Button>
-                        </Grid>
-                    </Grid>
-                </Box>
-            </Modal>
+         
         </>
     );
 }
