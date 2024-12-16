@@ -15,8 +15,8 @@
   },
 
   "hero": {
-    "heroTitle": "Wash Your Car Without Water: Subscribe!",
-    "heroSubtitle": " Save water, time and money. Spotless shine without using a drop of water!",
+    "heroTitle": "We care for your Car",
+    "heroSubtitle": "Protect your car and the planet, at the same time.",
     "heroExploreButton": "Explore"
   },
 
@@ -83,11 +83,10 @@
     "androidDescription": "Get it on the the Google Play"
   },
 
-  "descriptionTitle": "Uplift is a subscription-based car service",
-  "descriptionText1": "that brings professional car cleaning directly to your home or workplace.",
-  "descriptionText2": "Our goal is to save you time and make car care effortless, allowing you to focus on what matters most. With Uplift, you enjoy the convenience of a freshly cleaned car without disrupting your day.",
-  "promo": {
-    "freeTrialTitle": "Get a 15 days Free Trial!",
+"descriptionTitle": "Uplift is a subscription-based car wash service, reimagined.",
+  "descriptionText1": "We bring professional waterless car cleaning directly to your home or workplace, using innovative techniques.",
+  "descriptionText2": "Our goal is to save you time and make car care effortless and eco-friendly. With Uplift, you enjoy the convenience of a freshly cleaned car without disrupting your day.",  "promo": {
+    "freeTrialTitle": "¡Your first Month for just 5 USD!",
     "freeTrialSubtitle": "Download the App and Create your Account"
   },
   "upLift": "UpLift",

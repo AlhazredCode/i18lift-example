@@ -21,13 +21,13 @@ function VehicleSelector() {
 
 
   return (
-    <Box sx={{ width: '100%' , mt: '10vh'}}>
+    <Box sx={{ width: '100%' , mt: {xs: '20vh',sm: '18vh', lg: '10vh'}}}>
       <Container maxWidth="lg" sx={{ py: { md: 4, lg: 8 }, display: 'flex', justifyContent: 'center' }}>
-        <Grid container spacing={4} sx={{ width: '100%' }}>
+        <Grid container spacing={0} sx={{ width: '100%' }}>
           {/* Select Your Model Section */}
-          <Grid item xs={12} sx={{ bgcolor: 'rgba(255, 255, 255, 0.05)', px: 2, py: 2, borderRadius: 2 }}>
+          <Grid item xs={12} sx={{ bgcolor: 'rgba(255, 255, 255, 0.05)', py: 2, borderRadius: 2 }}>
             <Grid item sx={{ mb: 2 }}>
-              <Typography variant="h5" align="center" sx={{ fontWeight: 'bold' }}>
+              <Typography variant="h5" align="center" sx={{ fontWeight: 'bold', fontSize: isMobile ? '1.2rem' : '1.5rem', color: 'white' }}>
               {t('plans.VehicleType')}
               </Typography>
               <Typography variant="subtitle1" align="center" color="textSecondary">
@@ -56,7 +56,7 @@ function VehicleSelector() {
                     },
                   }}
                 >
-                  <Image src={vehicle.Image} alt={vehicle.name} width={isMobile ? 80 : 100} height={isMobile ? 80 : 100} style={{ borderRadius: 4 }} />
+                  <Image src={vehicle.Image} alt={vehicle.name} width={isMobile ? 50 : 100} height={isMobile ? 50 : 100} style={{ borderRadius: 4 }} />
                   <Typography variant="body2" sx={{ color:selectedVehicleLocal.id === vehicle.id ? 'white' : '#cccccc', mt: 1, fontSize: '0.9rem', fontWeight: 'bold' }}>
                     {vehicle.name}
                   </Typography>

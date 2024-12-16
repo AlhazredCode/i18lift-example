@@ -18,7 +18,7 @@ const Downloads: React.FC = () => {
 
   return (
     <Box sx={{ mx: '5vw' }}>
-      <Box sx={{ width: '100%', mt: '10vh', p: 2, minHeight: '70vh', alignContent: 'center' }}>
+      <Box sx={{ width: '100%', mt: { xs: '15vh', md: '10vh' }, p: 2, minHeight: '70vh', alignContent: 'center' }}>
         <Grid container spacing={4} justifyContent="center">
           {[
             {

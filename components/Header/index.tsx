@@ -96,14 +96,14 @@ const handleCloseModal = () => {
     <>
     <Box className={classes.container}>
       <Container maxWidth="lg" sx={{ py: 1, display: 'flex', justifyContent: 'center' }}>
-        <Grid container px={1}>
-          <Grid item xs={12} sm={4}>
+        <Grid container px={1} alignItems={'center'}>
+          <Grid item xs={12} md={4}>
             <Box justifySelf={isMobile ? 'center' : 'flex-start'}>
               <Image src="/icons/Logo.svg" alt="Logo" width={100} height={50} />
             </Box>
           </Grid>
 
-            <Grid item xs={12} sm={4} container justifyContent="center" alignItems="center">
+            <Grid item xs={12} md={4} container justifyContent="center" alignItems="center">
               <Grid item>
                 <Button
                   variant="text"
@@ -139,7 +139,7 @@ const handleCloseModal = () => {
          
 
 
-          <Grid item xs={12} sm={4} container justifyContent={isMobile ? 'center' : 'flex-end'}  alignItems="center" spacing={2}>
+          <Grid item xs={12} md={4} container justifyContent={isMobile ? 'center' : 'flex-end'}  alignItems="center" spacing={2}>
             <Grid item>
                 <Button className={classes.neonButton} onClick={handleOpenModal}>
                   {t('header.freeWash')}

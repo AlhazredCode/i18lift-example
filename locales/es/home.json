@@ -15,8 +15,8 @@
   },
 
   "hero": {
-    "heroTitle": "Lava tu auto sin agua: ¡Suscríbete! ",
-    "heroSubtitle": "Ahorra agua, tiempo y dinero. ¡Brillo impecable sin una gota de agua!",
+    "heroTitle": "Nos preocupamos por tu Auto",
+    "heroSubtitle": "Protege tu auto y el planeta, al mismo tiempo.",
     "heroExploreButton": "Explorar"
   },
   "Modal": {
@@ -80,11 +80,10 @@
     "androidDescription": "Consíguelo en Google Play"
 },
 
-  "descriptionTitle": "Uplift es un servicio de automóvil basado en suscripción",
-  "descriptionText1": "que lleva la limpieza profesional de automóviles directamente a tu hogar o lugar de trabajo.",
-  "descriptionText2": "Nuestro objetivo es ahorrarte tiempo y hacer que el cuidado del automóvil sea sencillo, permitiéndote concentrarte en lo que más importa. Con Uplift, disfrutas de la comodidad de un automóvil recién limpiado sin interrumpir tu día.",
-  "promo": {
-    "freeTrialTitle": "Obtén 15 días de prueba gratis!",
+"descriptionTitle": "Uplift es un servicio de lavado de autos por suscripción, reinventado.",
+"descriptionText1": "Llevamos el lavado de autos profesional sin agua directamente a tu hogar o lugar de trabajo, utilizando técnicas innovadoras.",
+"descriptionText2": "Nuestro objetivo es ahorrarte tiempo y hacer que el cuidado del auto sea sencillo y ecológico. Con Uplift, disfrutas de la comodidad de un auto recién lavado sin interrumpir tu día.",  "promo": {
+    "freeTrialTitle": "¡Tu primer Mes por solo 5 USD!",
     "freeTrialSubtitle": "Descarga la aplicación y crea tu cuenta"
   },
   "upLift": "UpLift",

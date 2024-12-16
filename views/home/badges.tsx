@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { Box, Container } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 import { motion } from 'framer-motion';
-
+import { useTheme } from '@mui/material';
+import { useMediaQuery }  from '@mui/material';
 const useStyles = makeStyles()((theme) => ({
   root: {
     display: 'flex',
@@ -24,6 +25,8 @@ const useStyles = makeStyles()((theme) => ({
 
 const Badges: React.FC = () => {
     const { classes } = useStyles();
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   
     const itemVariants = {
       hidden: { opacity: 0, y: 20 },
@@ -34,10 +37,10 @@ const Badges: React.FC = () => {
       <Box maxWidth="md"> 
         <Box className={classes.root}>
           <motion.div variants={itemVariants} initial="hidden" animate="visible" className={classes.badge}>
-            <Image src="/badges/AppStore.svg" alt="Badge 1" width={250} height={150} /> 
+            <Image src="/badges/AppStore.svg" alt="Badge 1" width={isMobile ? 150 : 250} height={isMobile ? 100 : 150} /> 
           </motion.div>
           <motion.div variants={itemVariants} initial="hidden" animate="visible" className={classes.badge}>
-            <Image src="/badges/GooglePlay.svg" alt="Badge 2" width={250} height={150} /> 
+            <Image src="/badges/GooglePlay.svg" alt="Badge 2" width={isMobile ? 150 : 250} height={isMobile ? 100 : 150} /> 
           </motion.div>
         </Box>
       </Box>

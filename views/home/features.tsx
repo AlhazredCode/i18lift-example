@@ -62,18 +62,20 @@ export default function Features() {
                 }}
               >
                 <Grid container alignItems="center" spacing={2} sx={{ flexGrow: 1 }}>
-                  <Grid item xs={12} sm={12} md={4} sx={{ display: 'flex', justifyContent: {sm:'left' , md: 'center' } }}>
+                  <Grid item xs={12} sm={12} md={12} sx={{ display: 'flex', justifyContent: {xs:'center' , md: 'left' } }}>
                      <Image src={feature.image} alt={feature.title} width={48} height={48} /> 
                   </Grid>
-                  <Grid item xs={12} sm={8} md={8} >
-                    <Box sx={{ textAlign: {sm:'left' , md: 'right' } , width: '100%'}} > {/* Added Box for text alignment */}
+                  <Grid item xs={12} sm={12} md={12} >
+                    <Box sx={{ textAlign: {xs:'center' , md: 'left' } , width: '100%'}} > {/* Added Box for text alignment */}
                       <Typography variant="h5" color="primary" sx={{
+
                           overflow: 'hidden',
                           textOverflow: 'ellipsis',
                           display: '-webkit-box',
                           WebkitLineClamp: '2', /* Limit to two lines */
                           WebkitBoxOrient: 'vertical',
-                          width: '100%'
+                          width: '100%',
+                      
 
                       }}> {/* Limit title to a maximum of two lines */}
                         {t(`home.features.${feature.title.replace(/ /g, '_')}`)}

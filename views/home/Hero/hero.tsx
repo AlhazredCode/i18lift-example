@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import { makeStyles } from 'tss-react/mui';
 import HeroContent from './HeroContent';
+import { useTheme } from '@mui/material';
+import {useMediaQuery} from '@mui/material';
 
 const useStyles = makeStyles()((theme) => ({
   container: {
@@ -64,7 +66,7 @@ const Hero: React.FC = () => {
     <div className={classes.container}>
       <div className={classes.imageContainer}>
         <Image
-          src="/CarDasboard.png"
+          src="/CarDasboard.webp"
           alt="Car Dashboard"
           layout="fill"
           className={classes.image}

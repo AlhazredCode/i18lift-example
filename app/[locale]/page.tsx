@@ -3,7 +3,6 @@
 import styles from './page.module.css';
 import LandingPage from '../../views/home/page';
 import Customize from '@/components/customize';
-import Pricing from '../../views/planSelector/page.d';
 import Downloads from '@/views/downloads';
 import Header from '@/components/Header';
 import Footer from '@/components/footer/footer';
