@@ -10,7 +10,7 @@ const Vehicles: Vehicle[] = [
     Deluxe : 80,
     Premium : 135,
     Elite : 200,
-    Image: '/Vehicles/Sedan.png', 
+    Image: '/Vehicles/Sedan.webp', 
   },
 
   {
@@ -32,7 +32,7 @@ const Vehicles: Vehicle[] = [
     Deluxe : 135,
     Premium : 225,
     Elite : 300,
-    Image:  '/Vehicles/Truck.png', // Agregar una imagen por defecto
+    Image:  '/Vehicles/Truck.webp', // Agregar una imagen por defecto
   }
 
   

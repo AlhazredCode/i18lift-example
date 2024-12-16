@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 function VehicleSelector() {
   const { setSelectedVehicle } = useContext(VehicleContext);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [selectedVehicleLocal, setSelectedVehicleLocal] = useState(Vehicles[0]); // Estado local para el estilo
   const { t } = useTranslation();
   
@@ -56,9 +56,9 @@ function VehicleSelector() {
                     },
                   }}
                 >
-                  <Image src={vehicle.Image} alt={vehicle.name} width={isMobile ? 50 : 100} height={isMobile ? 50 : 100} style={{ borderRadius: 4 }} />
+                  <Image src={vehicle.Image} alt={vehicle.name} width={isMobile ? 80  : 120} height={isMobile ? 80 : 120} style={{ borderRadius: 4 }} />
                   <Typography variant="body2" sx={{ color:selectedVehicleLocal.id === vehicle.id ? 'white' : '#cccccc', mt: 1, fontSize: '0.9rem', fontWeight: 'bold' }}>
-                    {vehicle.name}
+                    {vehicle.name} 
                   </Typography>
                 </Stack>
               ))}
